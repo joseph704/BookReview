@@ -5,18 +5,37 @@
 //  Created by Joseph Cha on 2022/07/20.
 //
 
-import Foundation
+import UIKit
 
-protocol ReviewListProtocol {}
+protocol ReviewListProtocol {
+    func setupNavigationBar()
+    func setupViews()
+}
 
-final class ReviewListPresenter {
+final class ReviewListPresenter: NSObject {
     private let viewController: ReviewListProtocol
     
     init(viewController: ReviewListProtocol) {
         self.viewController = viewController
+        
     }
     
-    func print() {
-        Swift.print()
+    func viewDidLoad() {
+        viewController.setupNavigationBar()
+        viewController.setupViews()
+    }
+}
+
+extension ReviewListPresenter: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
+        cell.textLabel?.text = "\(indexPath)"
+        
+        return cell
     }
 }
