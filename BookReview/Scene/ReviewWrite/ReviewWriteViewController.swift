@@ -26,7 +26,7 @@ final class ReviewWriteViewController: UIViewController {
     private lazy var contentsTextView: UITextView = {
         let textView = UITextView()
         textView.textColor = .tertiaryLabel
-        textView.text = "내용을 입력해주세요."
+        textView.text = presenter.contentsTextViewPlaceHolderText
         textView.font = .systemFont(ofSize: 16.0, weight: .medium)
         
         textView.delegate = self
@@ -146,7 +146,7 @@ private extension ReviewWriteViewController {
     }
     
     @objc func didTapRightBarButton() {
-        presenter.didTapRightBarButton()
+        presenter.didTapRightBarButton(contentsText: contentsTextView.text)
     }
     
     @objc func didTapBookTitleButton() {
