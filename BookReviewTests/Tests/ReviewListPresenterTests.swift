@@ -27,7 +27,9 @@ class ReviewListPresenterTests: XCTestCase {
     
     override func tearDown() {
         sut = nil
+        
         viewController = nil
+        userDefaultsManager = nil
         
         super.tearDown()
     }

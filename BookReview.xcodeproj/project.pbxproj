@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		045887F42897F8A90035549E /* MockReviewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045887F32897F8A90035549E /* MockReviewListViewController.swift */; };
 		045887F62897F8FA0035549E /* MockUserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045887F52897F8FA0035549E /* MockUserDefaultsManager.swift */; };
+		045887FA2897FA420035549E /* ReviewWritePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045887F92897FA420035549E /* ReviewWritePresenterTests.swift */; };
+		045887FC2897FF050035549E /* MockReviewWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045887FB2897FF050035549E /* MockReviewWriteViewController.swift */; };
 		045B8EFD2890092600F956E0 /* SearchBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B8EFC2890092600F956E0 /* SearchBookViewController.swift */; };
 		045B8EFF2890093100F956E0 /* SearchBookPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B8EFE2890093100F956E0 /* SearchBookPresenter.swift */; };
 		045B8F022890166A00F956E0 /* BookSearchRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B8F012890166A00F956E0 /* BookSearchRequestModel.swift */; };
@@ -53,6 +55,8 @@
 /* Begin PBXFileReference section */
 		045887F32897F8A90035549E /* MockReviewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockReviewListViewController.swift; sourceTree = "<group>"; };
 		045887F52897F8FA0035549E /* MockUserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserDefaultsManager.swift; sourceTree = "<group>"; };
+		045887F92897FA420035549E /* ReviewWritePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewWritePresenterTests.swift; sourceTree = "<group>"; };
+		045887FB2897FF050035549E /* MockReviewWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockReviewWriteViewController.swift; sourceTree = "<group>"; };
 		045B8EFC2890092600F956E0 /* SearchBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookViewController.swift; sourceTree = "<group>"; };
 		045B8EFE2890093100F956E0 /* SearchBookPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookPresenter.swift; sourceTree = "<group>"; };
 		045B8F012890166A00F956E0 /* BookSearchRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchRequestModel.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 			children = (
 				045887F32897F8A90035549E /* MockReviewListViewController.swift */,
 				045887F52897F8FA0035549E /* MockUserDefaultsManager.swift */,
+				045887FB2897FF050035549E /* MockReviewWriteViewController.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				04C1662E28882D1200AE88E4 /* ReviewListPresenterTests.swift */,
+				045887F92897FA420035549E /* ReviewWritePresenterTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -394,8 +400,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045887FC2897FF050035549E /* MockReviewWriteViewController.swift in Sources */,
 				045887F42897F8A90035549E /* MockReviewListViewController.swift in Sources */,
 				04C1662F28882D1200AE88E4 /* ReviewListPresenterTests.swift in Sources */,
+				045887FA2897FA420035549E /* ReviewWritePresenterTests.swift in Sources */,
 				045887F62897F8FA0035549E /* MockUserDefaultsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
